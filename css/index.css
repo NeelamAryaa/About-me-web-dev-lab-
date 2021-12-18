@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  color: #05a0f6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #8713f4;
+  color: white;
+  min-height: 3rem;
+  /* box-shadow: 5px 10px 20px #f8e30e; */
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.my-name {
+  color: #8713f4;
+}
+
+.about-me {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+main {
+  padding: 0;
+  width: 90vw;
+}
+
+aside {
+  width: 25vw;
+  padding: 20px 20px;
+}
+
+aside ul {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #f9ea5a;
+  text-align: center;
+}
+
+.footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 34px;
+}
+
+/* My favorite books */
+
+.books-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.book-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 60vh;
+  background-color: yellow;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.book-img img {
+  width: 150px;
+  height: 200px;
+}
+
+.book-content {
+  width: 50vw;
+  height: 70vh;
+}
+
+.book-content h4 {
+  color: #8713f4;
+  font-size: 32px;
+  /* margin: 0; */
+  text-align: center;
+}
+
+.book-content p,
+h5 {
+  text-align: justify;
+  padding: 0 50px;
+  font-size: 16px;
+}
+
+/* skills */
+
+.skills {
+  padding: 20px;
+  min-height: 74vh;
+}
+
+/* feedback */
+
+.left,
+.right {
+  float: left;
+  width: calc(40% - 1px);
+  padding: 2% 5%;
+  overflow: auto;
+}
+
+form {
+  display: grid;
+}
+form * {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+#btn1 {
+  padding: 8px 20px;
+  margin-top: 30px;
+  background: #4285f4;
+  border-radius: 7px;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+}
+form input {
+  box-shadow: 0 0 15px -10px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  width: fit-content;
+}
+.form-inner {
+  padding: 20px;
+
+  box-shadow: 0 0 10px -4px;
+}
+select {
+  border-radius: 17px;
+  border: 1px solid #fc6103;
+  background: #f6f6f6;
+  margin-right: 10px;
+}
+
+.right {
+  box-shadow: 0 0 70px -40px inset #ffdfdf;
+  min-height: 100vh;
+}
+.card {
+  width: 80%;
+  background: white;
+  box-shadow: 0 4px 20px #eee;
+  margin: auto;
+  margin-bottom: 40px;
+
+  position: relative;
+  top: 0;
+}
+.fade {
+  opacity: 0;
+}
+.card .head {
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  overflow: clip;
+  background: #8713f4;
+
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+.card .content {
+  padding: 20px 40px 25px;
+}
