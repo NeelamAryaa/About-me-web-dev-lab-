@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
   </head>
 
-  <body>
+  <body onload="fun()">
     <div class="form-outer left">
       <div class="head">
         <h1 style="font-size: 30px">Feedback Form</h1>
@@ -25,10 +25,10 @@
             </select>
             <label style="display: block">First Name</label>
 
-            <input type="text" name="firstName" id="firstName" maxlength="10" />
+            <input type="text" name="firstName" id="firstName" maxlength="30" />
           </fieldset>
           <label>Last Name</label>
-          <input type="text" name="lastName" id="lastName" maxlength="10" />
+          <input type="text" name="lastName" id="lastName" maxlength="30" />
           <label>Your Comments:</label>
           <textarea
             maxlength="75"
@@ -37,7 +37,10 @@
             rows="3"
             placeholder="write here..."
           ></textarea>
-          <input type="button" value="Submit" id="btn1" />
+          <div class="btn">
+            <input type="button" value="Submit" id="btn1" />
+            <input type="button" value="Reset" id="btn2" onclick="reset()" />
+          </div>
         </form>
       </div>
     </div>
@@ -54,7 +57,7 @@
         Top Comments
       </div>
       <div class="card">
-        <div class="head">Mr. John</div>
+        <div class="head">Mr. John says...</div>
         <div class="content">Great work!</div>
       </div>
     </div>

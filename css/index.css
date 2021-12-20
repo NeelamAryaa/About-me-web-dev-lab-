@@ -45,6 +45,9 @@ h3 {
 
 main {
   padding: 0;
+}
+
+.my-info {
   width: 90vw;
 }
 
@@ -80,7 +83,6 @@ footer {
 /* My favorite books */
 
 .books-container {
-  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,7 +149,14 @@ form * {
   padding: 5px;
   font-size: 18px;
 }
-#btn1 {
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn1,
+#btn2 {
   padding: 8px 20px;
   margin-top: 30px;
   background: #4285f4;
